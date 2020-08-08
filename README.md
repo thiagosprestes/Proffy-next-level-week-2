@@ -9,7 +9,7 @@ Proffy
 <p align="center">Plataforma educacional com o bjetivo de facilitar a conexão entre alunos e professores.</p>
 
 <div>
-  <img src=".github/proffy-cover.jpg" alt="proffy" />
+  <img src=".github/proffy-cover-next-level-week-2.jpg" alt="proffy" />
 </div>
 
 # 📋 Índice
