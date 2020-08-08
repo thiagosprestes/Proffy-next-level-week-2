@@ -1,7 +1,8 @@
 import Knex from 'knex';
 
-export async function up(Knex: Knex) {
-    return Knex.schema.createTable('users', table => {
+/*Quais alterações serão realizadas no DB.*/
+export async function up(knex: Knex) {
+    return knex.schema.createTable('users', table => { /*Criar a tabela.*/
         table.increments('id').primary();
         table.string('name').notNullable();
         table.string('avatar').notNullable();
@@ -10,6 +11,7 @@ export async function up(Knex: Knex) {
     });
 }
 
-export async function down(Knex: Knex) {
-    return Knex.schema.dropTable('users');
+/*Fazer o Backup caso der algum erro.*/
+export async function down(knex: Knex) { /*Deletar a tabela.*/
+    return knex.schema.dropTable('users');
 }
